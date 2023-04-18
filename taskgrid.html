@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+      }
+      .section1 {
+        width: 200px;
+        display: inline-grid;
+        grid-template-columns: auto auto auto auto;
+      }
+      .d1 {
+        height: 20px;
+        border: 2px solid black;
+        padding: 20px;
+        background-color: rgb(187, 99, 99);
+        color: rgb(34, 29, 40);
+      }
+      #one {
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+      #four {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      #five {
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+      #six {
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+      /* section two */
+      .section2 {
+        width: 200px;
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+      }
+      .d2 {
+        border: 2px solid black;
+        padding: 20px;
+        background-color: rgb(184, 13, 13);
+        color: rgb(34, 29, 40);
+      }
+      #d22 {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+      #d24 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+      #d26 {
+        grid-column-start: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+      .section3 {
+        width: 200px;
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+       
+       }
+
+      .d3 {
+       border: 2px solid black;
+       padding: 10px;
+       
+      }
+      #d31{
+       grid-row-start: 1;
+       grid-row-end: 3;
+       grid-column-start: 1;
+       grid-column-end: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <section class="section1">
+        <div class="d1">1</div>
+        <div class="d1" id="one">2</div>
+        <div class="d1" id="four">3</div>
+        <div class="d1">4</div>
+        <div class="d1" id="five">5</div>
+        <div class="d1" id="six">6</div>
+      </section>
+
+      <section class="section2">
+        <div class="d2">1</div>
+        <div class="d2" id="d22">2</div>
+        <div class="d2">3</div>
+        <div class="d2" id="d24">4</div>
+        <div class="d2" id="d25">5</div>
+        <div class="d2" id="d26">6</div>
+      </section>
+
+      <section class="section3">
+        <div class="d3" id="d31">1</div>
+        <div class="d3">2</div>
+        <div class="d3">3</div>
+        <div class="d3">4</div>
+        <div class="d3">5</div>
+        <div class="d3">6</div>
+      </section>
+    </div>
+  </body>
+</html>

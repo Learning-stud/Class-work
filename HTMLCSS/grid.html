@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <style>
+  div{
+   display: inline-grid;
+   grid-template-columns: auto auto auto auto;
+   gap: 20px 20px;
+  }
+  .one{
+   border: 2px solid grey;
+   padding: 20px;
+   background-color: orangered;
+   /* color: black; */
+   
+  }
+  #two{
+   background-color: aquamarine;
+   grid-row-start: 1;
+   grid-row-end: 4;
+  }
+  #three{
+   background-color: blue;
+   grid-column-start: 2;
+   grid-column-end: 4;
+  }
+  #six{
+   background-color: yellow;
+   grid-column-start: 4;
+   grid-row-start: 2;
+   grid-row-end: 4;
+  }
+  
+ </style>
+</head>
+<body>
+ <div>
+  <div id="two" >1</div>
+  <div id="three" >2</div>
+  <div class="one" style="color: rgb(52, 44, 38);" >3</div>
+  <div class="one" style="color: rgb(20, 19, 18);" >4</div>
+  <div class="one" style="color: rgb(23, 20, 18);" >5</div>
+  <div class="one" style="color: rgb(24, 22, 21);" id="six" >6</div>
+  <div class="one" style="color: rgb(13, 12, 11);" >7</div>
+  <div class="one" style="color: rgb(17, 15, 15);" >8</div>
+  
+ </div>
+ 
+</body>
+</html>
